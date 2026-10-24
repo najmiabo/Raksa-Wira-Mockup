@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RAKSA WIRA — Persaudaraan Otomotif Multikendaraan &amp; Filantropi</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#e1c386",
+            "on-secondary": "#402d00",
+            "secondary-container": "#584413",
+            "inverse-primary": "#735c00",
+            "surface-container-lowest": "#0e0e10",
+            "on-primary": "#3c2f00",
+            "on-primary-fixed": "#241a00",
+            "inverse-on-surface": "#303032",
+            "tertiary-fixed-dim": "#bbcabe",
+            "background": "#131315",
+            "secondary-fixed-dim": "#e1c386",
+            "primary-fixed-dim": "#e9c349",
+            "on-error-container": "#ffdad6",
+            "secondary-fixed": "#ffdf9f",
+            "on-surface-variant": "#d0c5af",
+            "on-tertiary": "#26332b",
+            "on-background": "#e5e1e4",
+            "on-secondary-fixed-variant": "#584413",
+            "on-secondary-container": "#cfb176",
+            "on-tertiary-container": "#3b483f",
+            "error-container": "#93000a",
+            "surface-tint": "#e9c349",
+            "primary": "#f2ca50",
+            "on-tertiary-fixed": "#121e16",
+            "primary-container": "#d4af37",
+            "surface-bright": "#39393b",
+            "surface-container-low": "#1b1b1d",
+            "outline-variant": "#4d4635",
+            "on-tertiary-fixed-variant": "#3d4a40",
+            "surface-variant": "#353437",
+            "on-surface": "#e5e1e4",
+            "surface": "#131315",
+            "surface-container-high": "#2a2a2c",
+            "inverse-surface": "#e5e1e4",
+            "tertiary-container": "#a8b7ab",
+            "on-primary-container": "#554300",
+            "tertiary-fixed": "#d7e6d9",
+            "surface-container": "#201f21",
+            "surface-container-highest": "#353437",
+            "outline": "#99907c",
+            "on-error": "#690005",
+            "error": "#ffb4ab",
+            "primary-fixed": "#ffe088",
+            "surface-dim": "#131315",
+            "tertiary": "#c4d2c6",
+            "on-secondary-fixed": "#261a00",
+            "on-primary-fixed-variant": "#574500"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "margin": "2.5rem",
+            "space-lg": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Space Grotesk"],
+            "headline-xl": ["Space Grotesk"],
+            "label-lg": ["Space Grotesk"],
+            "headline-xl-mobile": ["Space Grotesk"],
+            "headline-md": ["Space Grotesk"],
+            "body-lg": ["Manrope"],
+            "headline-lg-mobile": ["Space Grotesk"],
+            "body-md": ["Manrope"],
+            "label-md": ["Space Grotesk"],
+            "title-md": ["Space Grotesk"],
+            "body-sm": ["Manrope"],
+            "headline-sm": ["Space Grotesk"],
+            "headline-lg": ["Space Grotesk"]
+          },
+          "fontSize": {
+            "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "700" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "headline-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .shield-rim {
+      border-top: 1px solid rgba(212, 175, 55, 0.45);
+      position: relative;
+    }
+    .shield-rim::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 15%;
+      right: 15%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary font-body-md antialiased overflow-x-hidden">
+<!-- TOP APP BAR -->
+<header class="docked full-width top-0 sticky z-50 border-b border-outline-variant/30 bg-surface-container-lowest/90 backdrop-blur-md shadow-2xl shadow-black/80">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex justify-between items-center w-full">
+<!-- Brand Crest & Title -->
+<a class="flex items-center gap-3 transition-all duration-300 ease-out active:scale-95 group" href="#">
+<div class="w-10 h-10 rounded-full bg-surface-container-low border border-outline-variant/40 flex items-center justify-center overflow-hidden p-1 group-hover:border-primary/60 transition-colors">
+<img alt="Crest Raksa Wira" class="w-full h-full object-contain filter drop-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuxb8bGjLJ0Fbb4tllluC84p-ypvLRtjYv83zcBpsUpUvnAsq8sS0Q4dy94R-i0UWdKCNJC3qhJPdwlrB4B1WQSzOiCyvKtZncMOUUKEB08GI80KTZvpUwfriGwQYb7Cz4jBmrY8xCZdPubqgraxfrkYTkaCPqnPBT27IEQE9edYb_pv26zc-4Z7aZdNGVhKf_fOy0z5UkcF3wO4OnhsWu5ueDxkofMSG9G2BBOtVC5qR20RPUpXHhtmw7IoPrGHE0zU"/>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md tracking-wider font-bold text-primary uppercase leading-tight">RAKSA WIRA</span>
+<span class="font-label-sm text-label-sm text-outline tracking-widest uppercase">BROTHERHOOD &amp; PHILANTHROPY</span>
+</div>
+</a>
+<!-- Desktop Nav Navigation Links -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-widest transition-all duration-300 ease-out" href="#manifesto">Manifesto</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase tracking-widest" href="#divisi">Divisi</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase tracking-widest" href="#agenda">Agenda Tur</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase tracking-widest" href="#transparansi">Transparansi</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-200 font-label-md text-label-md uppercase tracking-widest" href="#afiliasi">Afiliasi</a>
+</nav>
+<!-- Trailing Actions & Primary CTAs -->
+<div class="flex items-center gap-3">
+<button class="hidden lg:flex items-center justify-center w-9 h-9 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface-variant hover:text-primary transition-colors duration-200" title="Protokol Keamanan">
+<span class="material-symbols-outlined text-[18px]" data-icon="shield">shield</span>
+</button>
+<button class="hidden lg:flex items-center justify-center w-9 h-9 rounded bg-surface-container-low border border-outline-variant/30 text-on-surface-variant hover:text-primary transition-colors duration-200" title="Cari Anggota / Arsip">
+<span class="material-symbols-outlined text-[18px]" data-icon="search">search</span>
+</button>
+<a class="hidden sm:inline-block font-label-md text-label-md text-outline hover:text-primary uppercase tracking-widest px-3 py-2 transition-colors duration-200" href="#kode-etik">
+          Kode Etik
+        </a>
+<a class="px-4 py-2.5 bg-primary-container text-on-primary font-headline-sm text-title-md uppercase tracking-wider font-bold rounded-lg shadow-[0_4px_18px_rgba(212,175,55,0.22)] hover:bg-secondary transition-all duration-300 ease-out active:scale-95 flex items-center gap-2" href="#gabung">
+<span>Gabung Pasukan</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="east">east</span>
+</a>
+</div>
+</div>
+</header>
+<!-- HERO SECTION: Atmospheric Cinematic Convoy Ambiance -->
+<section class="relative min-h-[90vh] flex items-center justify-center bg-surface-container-lowest overflow-hidden">
+<!-- Convoy Real Photography Background -->
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-40 mix-blend-luminosity scale-105 transform hover:scale-100 transition-transform duration-1000 ease-out" data-alt="A grand convoy of diverse vehicles traveling along a scenic coastal cliff road at warm dramatic golden hour dusk. Custom dual-sport touring motorcycles ride side-by-side with classic rugged 4x4 expedition SUVs and vintage rally sports cars. The ocean waves crash below in soft amber light while the convoy moves in tight disciplined unison under deep atmospheric shadows and noble dark tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDX92FvC7jKgiu-HjZV9MMl_Ke7_DxkJSmyABw3tkkEjnHVaxxFaU1RgAD9b_Hj5z5cgpTxZdb6dAd85z0L1-yip9j2xyYhcOi3LHI2cs3iNteOu3Nnh5qFfuYBIYR2WG63qDt2mP61rAHuUoEbYyxKkwiJSUAY7dgEQpgzjfmOi9EUvl_JMRgTRvX3Q2NxYK0O029xzrDypNrXgfVDZeZYWRLwcMTbzKUL8uPtfffmyvRtyAoALSQZLQ')">
+</div>
+<!-- Multilayer Vignette & Obsidian Gradients -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-surface-container-lowest/80 to-surface-container-lowest/95"></div>
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#0e0e10_90%)]"></div>
+</div>
+<!-- Hero Content Container -->
+<div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-24 md:py-32 w-full">
+<div class="max-w-3xl">
+<!-- Status & Badge Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low border border-primary/20 backdrop-blur-md mb-6">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">PERSAUDARAAN OTOMOTIF MULTI-KENDARAAN &amp; GERAKAN SOSIAL</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-on-surface tracking-tight uppercase mb-6 leading-none font-bold">
+          Satu Jalan, <span class="text-primary italic font-light">Banyak Cerita.</span><br/>
+          Satu Tujuan Berbagi.
+        </h1>
+<!-- Manifesto Lead Paragraph -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10 leading-relaxed font-light">
+          Di RAKSA WIRA, deru mesin tidak pernah diukur dari harga faktur atau kubikasi silinder. Dari matic komuter perkotaan, penjelajah 4x4 belantara, hingga mobil klasik bersejarah — kami bersumpah mengabdi di aspal yang sama demi kemanusiaan dan martabat bangsa.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="px-8 py-4 bg-primary text-on-primary font-title-md text-title-md uppercase tracking-wider font-bold rounded-lg shadow-[0_4px_22px_rgba(212,175,55,0.28)] hover:bg-secondary transition-all duration-300 active:scale-95 flex items-center gap-3" href="#gabung">
+<span>Gabung Brotherhood</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="handshake">handshake</span>
+</a>
+<a class="px-8 py-4 bg-surface-container-low border border-outline-variant/60 hover:border-primary text-on-surface font-title-md text-title-md uppercase tracking-wider rounded-lg transition-all duration-300 flex items-center gap-2" href="#transparansi">
+<span>Eksplorasi Aksi Sosial</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="volunteer_activism">volunteer_activism</span>
+</a>
+</div>
+<!-- Floating Metrics Counter -->
+<div class="mt-14 pt-8 border-t border-outline-variant/30 grid grid-cols-2 sm:grid-cols-4 gap-6">
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">2.400+</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Ksatria Jalanan Aktif</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">34 Kota</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Chapter Nusantara</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">100%</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Bebas Potongan Donasi</div>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-primary font-bold">42 Ekspedisi</div>
+<div class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Misi Bencana &amp; Sosial</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 1: MANIFESTO & ASYMMETRIC EDITORIAL -->
+<section class="py-24 bg-surface-container-lowest relative border-t border-outline-variant/20" id="manifesto">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary flex items-center gap-2">
+<span class="w-6 h-[1px] bg-primary"></span>
+            DOKTRIN &amp; KESETARAAN
+          </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-2 font-bold">
+            Bukan Tentang Harga Kendaraan,<br/>
+<span class="text-secondary">Tapi Kehormatan Hati.</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-outline max-w-md">
+          Sebuah seruan persaudaraan melawan arogansi jalan raya. Kami merangkul setiap roda yang berputar dengan niat tulus menjaga sesama.
+        </p>
+</div>
+<!-- Asymmetric Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left Editorial Visual Panel (7 cols) -->
+<div class="lg:col-span-7 relative rounded-lg overflow-hidden border border-outline-variant/40 bg-surface-container-low shield-rim flex flex-col justify-end min-h-[460px] group">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A precision midnight rendezvous featuring a dark matte black performance sports coupe parked alongside a sleek cafe racer motorbike in a moody wet asphalt urban alleyway. Soft golden streetlamp reflections bounce off wet cobblestones and polished carbon trim under an overcast rainy night sky. The composition portrays quiet brotherhood, raw discipline, and midnight camaraderie." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCltjWrRnxyvbwBfcz_zp-xrHwVrjGzNCO5pXahpBY3UE9YzeEh4OsVu0d_Er_81uAZ7t2vjJ-Sb5raIbB26BtvoUQAfkQhJ_l4IE7qigt286mp8nlabiDPIdNAQUwcKdpWu4o0RU-SsIwP0UugjycjDm-al0U2sZKGiJGDrC2QhNSx_IAfg_9E5cxl545JwDFvc-V5txGdyAwn1ypqU27lUk2rKzqmTGSNPxC1QWLaAtH4IIMVYKoFZg')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+</div>
+<!-- Floating Micro Badges -->
+<div class="relative z-10 p-8">
+<div class="flex items-center gap-3 mb-4">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest/80 backdrop-blur-sm border border-outline-variant/30 font-label-sm text-label-sm text-primary uppercase">
+                OPS: PATROLI MALAM &amp; TANGGAP KOTA
+              </span>
+<span class="px-2.5 py-1 rounded bg-secondary-container/60 backdrop-blur-sm font-label-sm text-label-sm text-secondary-fixed uppercase">
+                KODE DIVISI 01 / 02
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase font-bold mb-2">
+              Berdampingan Tanpa Kasta Aspal
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              Ketika sirine darurat berbunyi atau jalanan memanggil untuk bantuan logistik, motor gesit dan mobil penumpu bergerak dalam koordinasi simfoni yang padu.
+            </p>
+</div>
+</div>
+<!-- Right Philosophy Shield & Manifesto Principles (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between p-8 rounded-lg bg-surface-container border border-outline-variant/30 shield-rim relative overflow-hidden">
+<!-- Watermark Shield Crest Background -->
+<div class="absolute -right-12 -top-12 w-64 h-64 opacity-5 pointer-events-none">
+<img alt="Heraldic Seal" class="w-full h-full object-contain filter invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuxb8bGjLJ0Fbb4tllluC84p-ypvLRtjYv83zcBpsUpUvnAsq8sS0Q4dy94R-i0UWdKCNJC3qhJPdwlrB4B1WQSzOiCyvKtZncMOUUKEB08GI80KTZvpUwfriGwQYb7Cz4jBmrY8xCZdPubqgraxfrkYTkaCPqnPBT27IEQE9edYb_pv26zc-4Z7aZdNGVhKf_fOy0z5UkcF3wO4OnhsWu5ueDxkofMSG9G2BBOtVC5qR20RPUpXHhtmw7IoPrGHE0zU"/>
+</div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded bg-surface-container-low border border-primary/40 flex items-center justify-center mb-6">
+<img alt="Stempel Otentisitas" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuxb8bGjLJ0Fbb4tllluC84p-ypvLRtjYv83zcBpsUpUvnAsq8sS0Q4dy94R-i0UWdKCNJC3qhJPdwlrB4B1WQSzOiCyvKtZncMOUUKEB08GI80KTZvpUwfriGwQYb7Cz4jBmrY8xCZdPubqgraxfrkYTkaCPqnPBT27IEQE9edYb_pv26zc-4Z7aZdNGVhKf_fOy0z5UkcF3wO4OnhsWu5ueDxkofMSG9G2BBOtVC5qR20RPUpXHhtmw7IoPrGHE0zU"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-4">
+              Tiga Janji Pengemudi Ksatria
+            </h4>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="font-headline-sm text-primary font-bold">I.</span>
+<div>
+<h5 class="font-title-md text-title-md text-on-surface uppercase font-semibold">Nol Arogansi Strobo &amp; Sirine</h5>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+                    Kami menolak meminta jalan dengan paksa. Pengguna jalan lain adalah saudara sebangsa yang wajib dihormati keselamatannya.
+                  </p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="font-headline-sm text-primary font-bold">II.</span>
+<div>
+<h5 class="font-title-md text-title-md text-on-surface uppercase font-semibold">Tangan Terbuka di Setiap Kilometer</h5>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+                    Melihat kendaraan mogok atau kecelakaan adalah komando otomatis untuk berhenti dan memberikan pertolongan pertama tanpa pamrih.
+                  </p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="font-headline-sm text-primary font-bold">III.</span>
+<div>
+<h5 class="font-title-md text-title-md text-on-surface uppercase font-semibold">Kendaraan Sebagai Tabut Manfaat</h5>
+<p class="font-body-sm text-body-sm text-outline mt-1">
+                    Setiap kilometer bahan bakar yang kami bakar diwajibkan menyisihkan pundi untuk beasiswa anak yatim dan sembako warga pelosok.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-outline-variant/30 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">PIAGAM SUMPAH KESATRIA RAKSA</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">TERVALIDASI CHAPTER PUSAT</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: DIVISI KENDARAAN TERBUKA (MULTI-ARMADA) -->
+<section class="py-24 bg-surface relative border-t border-outline-variant/20" id="divisi">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">STRUKTUR OPERASIONAL</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-2 font-bold">
+          Empat Sayap Armada Kehormatan
+        </h2>
+<p class="font-body-md text-body-md text-outline mt-3">
+          Setiap jenis kendaraan memiliki peran taktis unik saat konvoi misi sosial digelar melintasi berbagai lanskap nusantara.
+        </p>
+</div>
+<!-- Bento-style 4 Division Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Division 01 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-sm text-primary font-mono font-bold">01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">2-Wheels Fleet</span>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]" data-icon="two_wheeler">two_wheeler</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-2">
+              Divisi Garis Depan
+            </h3>
+<p class="font-label-md text-label-md text-secondary mb-3">Motor Komuter, Sport &amp; Dual-Sport</p>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+              Bertugas sebagai pemantau jalur aman, penyampai pesan cepat, navigasi persimpangan padat, dan pembuka komunikasi darurat non-arogan.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]" data-icon="shield">shield</span>
+<span>Respon Cepat Medis Pertama</span>
+</div>
+</div>
+<!-- Division 02 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-sm text-primary font-mono font-bold">02</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">Family &amp; Sedan</span>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]" data-icon="directions_car">directions_car</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-2">
+              Divisi Mobilitas Santun
+            </h3>
+<p class="font-label-md text-label-md text-secondary mb-3">City Car, Hatchback &amp; Sedan</p>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+              Tulang punggung logistik keluarga, akomodasi tenaga relawan medis dokter relawan, serta pengangkutan pasokan obat-obatan higienis.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]" data-icon="shield">shield</span>
+<span>Akomodasi Relawan &amp; Dokter</span>
+</div>
+</div>
+<!-- Division 03 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-sm text-primary font-mono font-bold">03</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">All-Terrain / 4WD</span>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]" data-icon="terrain">terrain</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-2">
+              Divisi Reaksi Cepat &amp; 4x4
+            </h3>
+<p class="font-label-md text-label-md text-secondary mb-3">SUV Ekspedisi &amp; Jip Offroad</p>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+              Membawa berton-ton beras dan genset menembus jalan tanah berlumpur, tanah longsor, dan desa pelosok yang terputus dari jalur aspal reguler.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]" data-icon="shield">shield</span>
+<span>Evakuasi &amp; Bencana Alam</span>
+</div>
+</div>
+<!-- Division 04 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline-sm text-primary font-mono font-bold">04</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase">Heritage &amp; Classic</span>
+</div>
+<div class="w-12 h-12 rounded bg-surface-container-highest flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]" data-icon="history_edu">history_edu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-2">
+              Divisi Warisan Kehormatan
+            </h3>
+<p class="font-label-md text-label-md text-secondary mb-3">Mobil &amp; Motor Klasik / Retro</p>
+<p class="font-body-sm text-body-sm text-outline leading-relaxed">
+              Menjaga warisan sejarah otomotif seraya memimpin pameran amal, rally santai filantropi, dan lelang restorasi untuk beasiswa anak yatim.
+            </p>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase">
+<span class="material-symbols-outlined text-[14px]" data-icon="shield">shield</span>
+<span>Penggalangan Dana &amp; Budaya</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: JEJAK PENGABDIAN & AKSI NYATA (FILANTROPI) -->
+<section class="py-24 bg-surface-container-lowest relative border-t border-outline-variant/20" id="transparansi">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Visual: Real Field Photography -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-lg overflow-hidden border border-outline-variant/40 shadow-2xl shield-rim">
+<div class="w-full h-[420px] bg-cover bg-center" data-alt="A heart-warming documentary photograph of Indonesian automotive community volunteers standing next to heavy duty 4x4 pickup trucks loaded with aid packages. Two female volunteers smile gently as they hand over marked cardboard boxes of food assistance directly to local village elders in a lush rural mountain hamlet with rice terraces in the background. Natural soft daylight and authentic emotional human connection." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA0adi1PzX1KjFcHRL9hSP0WtIN4HCImsB0zRV5INKsMH6zR20iI5P54-6yOyGaw2q5W1eZ_yBRMOQW-JIGTpjM-Qah_yKSqLiYPVf0d13q-ZbRCUXxOe9xzj67daAnYfq6a4U17hgxNqlSMflx0RU9Xrq_DLxNWiHmmWfHV7nqu7skWpwK8rWWJMe7vCHCfSI8w7NR8cVq78peZ3eNxIfGligRgrkIIMuZ79u8gumPf_KkqxlJ4Y9hhw')">
+</div>
+<div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent p-6">
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase font-bold">
+                DOKUMENTASI DESA SUKAMAKMUR, JAWA BARAT
+              </span>
+<p class="font-body-sm text-body-sm text-on-surface mt-2 font-medium">
+                Penyaluran 450 paket sembako, selimut, dan genset darurat pasca bencana longsor jalur perbukitan.
+              </p>
+</div>
+</div>
+<!-- Floating Transparent Metric Card -->
+<div class="absolute -bottom-6 -right-4 md:right-6 bg-surface-container-high/90 backdrop-blur-md border border-primary/40 p-4 rounded-lg shadow-xl max-w-xs">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="verified">verified</span>
+<div>
+<p class="font-label-sm text-label-sm uppercase text-outline">STATUS AUDIT KEUANGAN</p>
+<p class="font-title-md text-title-md text-on-surface font-bold">WTP (Wajar Tanpa Pengecualian)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Content: Audit Report & Mission Feed -->
+<div class="lg:col-span-6">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary flex items-center gap-2">
+<span class="w-6 h-[1px] bg-primary"></span>
+            TRANSPARANSI MUTLAK
+          </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-2 font-bold">
+            Setiap Rupiah Tiba di Tangan yang Berhak
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed font-light">
+            Kami memisahkan total biaya operasional konvoi pribadi dengan dana sumbangan publik. Seluruh bahan bakar, akomodasi, dan konsumsi anggota ditanggung secara mandiri oleh masing-masing ksatria.
+          </p>
+<!-- Metrics Table / List -->
+<div class="mt-8 space-y-4">
+<div class="p-4 rounded bg-surface-container border border-outline-variant/20 flex justify-between items-center">
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Total Donasi Tersalurkan (2024-2025)</div>
+<div class="font-body-sm text-body-sm text-outline">Diaudit oleh Kantor Akuntan Publik Independen</div>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Rp 1.482.000.000</div>
+</div>
+<div class="p-4 rounded bg-surface-container border border-outline-variant/20 flex justify-between items-center">
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Paket Bantuan Terdistribusi</div>
+<div class="font-body-sm text-body-sm text-outline">Sembako, Tenda Darurat &amp; Seragam Sekolah</div>
+</div>
+<div class="font-headline-sm text-headline-sm text-secondary font-bold">18.650 Paket</div>
+</div>
+<div class="p-4 rounded bg-surface-container border border-outline-variant/20 flex justify-between items-center">
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Jembatan Perintis &amp; MCK Dibangun</div>
+<div class="font-body-sm text-body-sm text-outline">Kolaborasi Divisi 4x4 &amp; Zeni TNI</div>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">14 Titik Desa</div>
+</div>
+</div>
+<div class="mt-8">
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary uppercase tracking-wider hover:text-secondary transition-colors" href="#laporan-lengkap">
+<span>Unduh Buku Putih Laporan Audit Filantropi Q4</span>
+<span class="material-symbols-outlined text-[16px]" data-icon="file_download">file_download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: AGENDA TUR KEMANUSIAAN TERDEKAT -->
+<section class="py-24 bg-surface relative border-t border-outline-variant/20" id="agenda">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">AGENDA OPERASIONAL</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-2 font-bold">
+            Jadwal Ekspedisi Kemanusiaan 2025
+          </h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Pendaftaran Konvoi Dibuka</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Agenda Card 1 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm uppercase">KODE: EKSPEDISI MENOREH</span>
+<span class="font-label-sm text-label-sm text-outline">12 - 14 MEI 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-3">
+              Misi Bedah Sekolah Pegunungan Menoreh
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Rute lintas bukit Magelang - Kulon Progo. Mengantar perabot kelas, buku bacaan, serta renovasi fasilitas sanitasi 3 SD pelosok.
+            </p>
+<div class="space-y-2 text-label-md text-label-md text-outline">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="route">route</span>
+<span>Titik Kumpul: Chapter Jogja &amp; Solo</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="groups">groups</span>
+<span>Slot Armada: 60 Motor + 25 Roda Empat</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Status: Terverifikasi</span>
+<button class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+<span>Detail Rute</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Agenda Card 2 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm uppercase">KODE: RAMADHAN MULIA</span>
+<span class="font-label-sm text-label-sm text-outline">JUNI 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-3">
+              Sahur &amp; Buka Bersama 1.000 Pengayuh Becak
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Gerakan serentak 12 kota di Pulau Jawa. Pembagian paket pangan malam dan servis ringan gratis bagi motor &amp; sepeda pekerja harian.
+            </p>
+<div class="space-y-2 text-label-md text-label-md text-outline">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="route">route</span>
+<span>Pusat Komando: Jakarta, Bandung, Surabaya</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="groups">groups</span>
+<span>Terbuka Semua Anggota Raksa Wira</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Status: Koordinasi Posko</span>
+<button class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+<span>Detail Rute</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Agenda Card 3 -->
+<div class="p-6 rounded-lg bg-surface-container-low border border-outline-variant/30 shield-rim flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="px-2.5 py-1 rounded bg-secondary-container/40 text-secondary font-label-sm text-label-sm uppercase">KODE: SUMATRA RECOVERY</span>
+<span class="font-label-sm text-label-sm text-outline">AGUSTUS 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase font-bold mb-3">
+              Misi Penjaga Hutan &amp; Sumber Air Bersih
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Divisi 4x4 dan Motor Dual-Sport mengangkut instalasi pipa air bersih sepanjang 4 kilometer di lereng Bukit Barisan Selatan.
+            </p>
+<div class="space-y-2 text-label-md text-label-md text-outline">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="route">route</span>
+<span>Titik Kumpul: Chapter Lampung &amp; Palembang</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" data-icon="groups">groups</span>
+<span>Khusus Pengemudi Terlatih Sertifikasi</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Status: Tahap Survei Lapangan</span>
+<button class="font-label-md text-label-md text-on-surface hover:text-primary transition-colors flex items-center gap-1">
+<span>Detail Rute</span>
+<span class="material-symbols-outlined text-[14px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: SUARA ANGGOTA TANPA SEKAT (TESTIMONIALS) -->
+<section class="py-24 bg-surface-container-lowest relative border-t border-outline-variant/20">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary">PERSATUAN HAKIKI</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mt-2 font-bold">
+          Suara Saudara di Balik Kemudi
+        </h2>
+<p class="font-body-md text-body-md text-outline mt-3">
+          Ketika ego klub motor dan sekat harga mobil runtuh, yang tersisa hanyalah persaudaraan murni.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Quote 1 -->
+<div class="p-8 rounded-lg bg-surface-container border border-outline-variant/30 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed mb-6">
+            "Saya cuma naik skuter matic 125cc yang biasa dipakai harian. Di komunitas lain mungkin dipandang sebelah mata. Di Raksa Wira, saat bakti sosial ke Garut, posisi saya mengawal rombongan medis di depan dan dihargai seutuhnya seperti ksatria."
+          </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">
+              AR
+            </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Agung Rahardjo</div>
+<div class="font-label-sm text-label-sm text-outline">Anggota Divisi Garis Depan — Chapter Bandung</div>
+</div>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="p-8 rounded-lg bg-surface-container border border-outline-variant/30 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed mb-6">
+            "Bagi saya yang menggemari modifikasi mobil jip offroad, kepuasan terbesar bukan sekadar menaklukkan kubangan lumpur ekstrim, tapi saat winch dan bagasi mobil kami dipakai mengevakuasi balita dan lansia korban banjir bandang."
+          </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">
+              BW
+            </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">Bambang Wicaksono</div>
+<div class="font-label-sm text-label-sm text-outline">Ketua Divisi 4x4 Ekspedisi — Chapter Jawa Timur</div>
+</div>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="p-8 rounded-lg bg-surface-container border border-outline-variant/30 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed mb-6">
+            "Mobil tua saya tahun 1974 biasanya cuma keluar untuk kontes akhir pekan. Di Raksa Wira, mobil ini menjadi daya tarik lelang amal yang menghasilkan dana ratusan juta untuk beasiswa yatim anak-anak sopir angkot."
+          </p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary font-bold flex items-center justify-center font-headline-sm">
+              MK
+            </div>
+<div>
+<div class="font-title-md text-title-md text-on-surface font-semibold">M. Kevin Siregar</div>
+<div class="font-label-sm text-label-sm text-outline">Divisi Warisan Kehormatan — Chapter Medan</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: PENDAFTARAN KSATRIA JALANAN (MEMBERSHIP FORM) -->
+<section class="py-24 bg-surface relative border-t border-outline-variant/20" id="gabung">
+<div class="max-w-4xl mx-auto px-6 lg:px-10">
+<!-- Box Form Container -->
+<div class="p-8 md:p-12 rounded-lg bg-surface-container-low border border-outline-variant/40 shield-rim shadow-2xl relative overflow-hidden">
+<div class="text-center mb-10">
+<div class="inline-flex items-center justify-center w-14 h-14 rounded-full bg-surface-container-high border border-primary/40 mb-4">
+<img alt="Emblem" class="w-9 h-9 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuxb8bGjLJ0Fbb4tllluC84p-ypvLRtjYv83zcBpsUpUvnAsq8sS0Q4dy94R-i0UWdKCNJC3qhJPdwlrB4B1WQSzOiCyvKtZncMOUUKEB08GI80KTZvpUwfriGwQYb7Cz4jBmrY8xCZdPubqgraxfrkYTkaCPqnPBT27IEQE9edYb_pv26zc-4Z7aZdNGVhKf_fOy0z5UkcF3wO4OnhsWu5ueDxkofMSG9G2BBOtVC5qR20RPUpXHhtmw7IoPrGHE0zU"/>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase font-bold tracking-tight">
+            Pendaftaran Ksatria Raksa Wira
+          </h2>
+<p class="font-body-md text-body-md text-outline mt-2 max-w-lg mx-auto">
+            Terbuka bagi pemilik segala jenis kendaraan bermotor legal. Syarat mutlak: Menghargai pengguna jalan dan siap terpanggil untuk kemanusiaan.
+          </p>
+</div>
+<form class="space-y-6" onsubmit="event.preventDefault(); alert('Pendaftaran terkirim! Sekretariat Chapter akan menghubungi nomor kontak terdaftar.');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Nama Lengkap Sesuai KTP</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md" placeholder="Contoh: Raden Satria Pratama" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Nomor WhatsApp Aktif</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md" placeholder="+62 812 xxxx xxxx" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Pilihan Divisi Armada</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md">
+<option>Divisi Garis Depan (Roda Dua)</option>
+<option>Divisi Mobilitas Santun (City Car &amp; Sedan)</option>
+<option>Divisi Reaksi Cepat (SUV &amp; 4x4)</option>
+<option>Divisi Warisan Kehormatan (Klasik)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Merek &amp; Tipe Kendaraan</label>
+<input class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md" placeholder="Contoh: Vario 160 / Pajero / Corolla 80" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Domisili Chapter</label>
+<select class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md">
+<option>Chapter Jakarta Raya</option>
+<option>Chapter Jawa Barat (Bandung)</option>
+<option>Chapter Jawa Tengah (Semarang-Solo)</option>
+<option>Chapter DI Yogyakarta</option>
+<option>Chapter Jawa Timur (Surabaya-Malang)</option>
+<option>Chapter Bali &amp; Nusa Tenggara</option>
+<option>Chapter Sumatra &amp; Borneo</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-2">Motivasi &amp; Komitmen Anda Bergabung</label>
+<textarea class="w-full bg-surface-container-lowest border border-outline-variant/40 rounded px-4 py-3 text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-body-md" placeholder="Ceritakan kesiapan Anda meluangkan waktu dan tenaga saat aksi sosial darurat berlangsung..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-start gap-3 pt-2">
+<input class="mt-1 rounded bg-surface-container-lowest border-outline-variant text-primary focus:ring-0" id="kode-etik-check" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-outline" for="kode-etik-check">
+              Saya bersumpah mematuhi Kode Etik Berkendara RAKSA WIRA: Mengharamkan sirine ilegal, menjunjung toleransi pengguna jalan, dan menjaga nama baik kehormatan persaudaraan.
+            </label>
+</div>
+<button class="w-full py-4 bg-primary text-on-primary font-headline-sm text-title-md uppercase tracking-widest font-bold rounded shadow-[0_4px_22px_rgba(212,175,55,0.25)] hover:bg-secondary transition-all duration-300 active:scale-98" type="submit">
+            Kirim Pengajuan Kehormatan
+          </button>
+</form>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="full-width border-t border-outline-variant/40 bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-16 flex flex-col md:flex-row justify-between items-center gap-8 w-full">
+<!-- Brand & Copyright -->
+<div class="flex flex-col items-center md:items-start text-center md:text-left gap-3">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-low border border-outline-variant/40 flex items-center justify-center p-0.5">
+<img alt="Crest Footer" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuxb8bGjLJ0Fbb4tllluC84p-ypvLRtjYv83zcBpsUpUvnAsq8sS0Q4dy94R-i0UWdKCNJC3qhJPdwlrB4B1WQSzOiCyvKtZncMOUUKEB08GI80KTZvpUwfriGwQYb7Cz4jBmrY8xCZdPubqgraxfrkYTkaCPqnPBT27IEQE9edYb_pv26zc-4Z7aZdNGVhKf_fOy0z5UkcF3wO4OnhsWu5ueDxkofMSG9G2BBOtVC5qR20RPUpXHhtmw7IoPrGHE0zU"/>
+</div>
+<span class="font-headline-md text-headline-md font-bold tracking-widest text-primary uppercase">RAKSA WIRA</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline max-w-md">
+          © 2025 RAKSA WIRA Automotive Brotherhood &amp; Philanthropy. Kehormatan di Jalan, Pengabdian untuk Negeri.
+        </p>
+</div>
+<!-- Footer Navigation Links -->
+<div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-3 max-w-xl text-center md:text-right">
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Manifesto Ksatria</a>
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Transparansi Anggaran</a>
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Laporan Audit Filantropi</a>
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Protokol Konvoi</a>
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Divisi Armada</a>
+<a class="text-outline hover:text-secondary transition-colors duration-200 font-label-sm text-label-sm uppercase tracking-wider" href="#">Sekretariat Kehormatan</a>
+</div>
+</div>
+</footer>
+</body></html>
